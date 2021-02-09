@@ -7,14 +7,14 @@
             <div class="card-body">
                 <h2 class="text-center">REGISTER</h2>
                 <hr>
-                <form>
+                <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <input type="email" class="form-control" formControlName="email" placeholder="Enter your email">
                     </div>
                     <div class="form-group">
                         <label for="password">Password:</label>
-                        <input type="password" class="form-control" placeholder="Enter your password">
+                        <input type="password" class="form-control" formControlName="password" placeholder="Enter your password">
                     </div>
                     <button type="submit" class="btn btn-dark btn-lg btn-block mt-4">Register</button>
                 </form>
