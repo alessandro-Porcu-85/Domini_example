@@ -1,0 +1,58 @@
+button {
+    color: white;
+    background-color: rgb(121, 120, 119);
+    border: none;
+    padding: .5rem 0rem;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(13, 1, 50);
+}
+
+.form-control {
+    height: 28px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: .2rem;
+}
+
+.form-control {
+    height: 30px;
+}
+
+label {
+    margin-right: 230px;
+    color: rgb(6, 6, 6);
+    font-size: 12px;
+}
+
+p {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.card {
+    box-shadow: 3px 3px 6px 1px #292929;
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
+a {
+    color: blue;
+}
+
+hr {
+    margin-top: -5px;
+    color: white;
+}
+
+.wrap {
+    padding-top: 10px;
+}
+
+.form-group-1 {
+    margin-top: -10px;
+}
