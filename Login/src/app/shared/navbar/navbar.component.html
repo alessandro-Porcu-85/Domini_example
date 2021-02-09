@@ -13,27 +13,27 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Collection</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" routerLink="/shopping-cart">Shopping Cart</a>
+                        <a class="dropdown-item" routerLink="/register">Register</a>
                         <a class="dropdown-item" href="#">Something else here</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Separated link</a>
                     </div>
                 </li>
-                <li class="nav-item ml-5">
+                <li class="nav-item ml-5" *ngIf="!isLogged">
                     <a class="nav-link" routerLink="/login">Login</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item" *ngIf="!isLogged">
                     <a class="nav-link" routerLink="/register">Register</a>
                 </li>
 
-                <li class="nav-item ">
-                    <a class="nav-link">Logout</a>
+                <li class="nav-item " *ngIf="isLogged">
+                    <a class="nav-link" (click)="onLogout()">Logout</a>
                 </li>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;
                 <li class="nav-item">
-                    <a class="nav-link"></a>
+                    <a class="nav-link">{{ user?.email }}</a>
                 </li>
 
             </ul>
