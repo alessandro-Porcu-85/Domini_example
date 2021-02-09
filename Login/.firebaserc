@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "login-91f48": {
+      "hosting": {
+        "Login": [
+          "login-91f48"
+        ]
+      }
+    }
+  }
+}
