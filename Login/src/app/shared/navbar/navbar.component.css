@@ -1,0 +1,55 @@
+.navbar {
+    height: 5rem;
+    background-color: black;
+    /*3px 3px 6px 1px;*/
+    box-shadow: 3px 3px 6px 1px #292929;
+}
+
+.nav-link {
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.navbar-nav .ul {
+    text-decoration: none;
+}
+
+.li a {
+    color: white;
+    cursor: poniter;
+}
+
+.navbar-brand {
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.d-flex {
+    height: 10px;
+    margin-right: -15px;
+}
+
+.form-control {
+    margin-top: -13px;
+    height: 28px;
+}
+
+.btn.btn-outline-success {
+    font-size: 10px;
+    height: 22px;
+    margin-top: -10px;
+}
+
+.dropdown-item {
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(212, 212, 212);
+    cursor: pointer;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
