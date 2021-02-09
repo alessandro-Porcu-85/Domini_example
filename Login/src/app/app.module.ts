@@ -7,6 +7,13 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 /*reactive form*/
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+
+/*fire-modules*/
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from 'src/environments/environment';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +23,9 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
