@@ -14,13 +14,15 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from 'src/environments/environment';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent
   ],
   imports: [
-    BrowserModule,
+
+  BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,

@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+/* service*/
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
+  providers: [AuthService]
 })
 export class LoginComponent implements OnInit {
 
@@ -14,11 +18,21 @@ export class LoginComponent implements OnInit {
     password: new FormControl(''),
 
   });
-  constructor() { }
+  constructor(private authSvc: AuthService, private router: Router) { }
 
   ngOnInit(): void {}
 
-  onLogin(){
-  console.log('this.loginForm');
+  async onLogin(){
+    const {email, password } = this.loginForm.value;
+    try{
+     const user = await this.authSvc.login(email, password);
+     if (user){
+
+       this.router.navigate(['/home']);
+     }
+    }
+    catch(error){console.log(error)}
+
+
 }
 }
