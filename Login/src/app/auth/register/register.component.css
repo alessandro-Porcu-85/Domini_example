@@ -1,13 +1,14 @@
 button {
     color: white;
-    background-color: rgb(121, 120, 119);
+    background-color: red;
     border: none;
     padding: .5rem 0rem;
 }
 
 button:hover {
     color: white;
-    background-color: rgb(13, 1, 50);
+    background-color: red;
+    box-shadow: 3px 3px 6px 1px #292929;
 }
 
 .form-control {
@@ -42,6 +43,7 @@ p {
 
 a {
     color: blue;
+    font-weight: bold;
 }
 
 hr {
