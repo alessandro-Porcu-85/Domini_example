@@ -6,7 +6,7 @@
 }
 
 .nav-link {
-    font-size: 10px;
+    font-size: 13px;
     cursor: pointer;
 }
 
@@ -16,7 +16,7 @@
 
 .li a {
     color: white;
-    cursor: poniter;
+    cursor: pointer;
 }
 
 .navbar-brand {
@@ -32,12 +32,6 @@
 .form-control {
     margin-top: -13px;
     height: 28px;
-}
-
-.btn.btn-outline-success {
-    font-size: 10px;
-    height: 22px;
-    margin-top: -10px;
 }
 
 .dropdown-item {

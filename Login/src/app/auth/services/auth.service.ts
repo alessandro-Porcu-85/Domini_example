@@ -9,6 +9,7 @@ import { first } from 'rxjs/operators';
 
 export class AuthService {
   public user: any;
+  auth: any;
 
   constructor(public afAuth: AngularFireAuth) { }
 

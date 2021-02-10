@@ -1,17 +1,18 @@
 <nav class="navbar navbar-expand-md navbar-dark  fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" routerLink="/">Home<img style="width:50%" src=""></a>
+        <a class="navbar-brand" routerLink="/"><b>On-line University</b><img style="width:50%" src=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button> &nbsp;&nbsp;
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+            <ul class="navbar-nav mx-auto mb-2 mb-md-0" *ngIf="user$ |async as user; else login">
 
-                <li class="nav-item ">
-                    <a class="nav-link" routerLink="/shopping-cart">Shopping Cart</a>
+                <li class="nav-item mr-8 mt-4">
+                    <a class="nav-link" routerLink="/shopping-cart">The School</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Collection</a>
+
+                <li class="nav-item dropdown mt-4">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" routerLink="/shopping-cart">Shopping Cart</a>
                         <a class="dropdown-item" routerLink="/register">Register</a>
@@ -20,20 +21,59 @@
                         <a class="dropdown-item" href="#">Separated link</a>
                     </div>
                 </li>
-                <li class="nav-item ml-5" *ngIf="!isLogged">
+
+                <li class="nav-item mr-8 mt-4">
+                    <a class="nav-link" routerLink="/shopping-cart">Contact</a>
+                </li>
+
+
+                <li class="nav-item ml-5" *ngIf="!user">
                     <a class="nav-link" routerLink="/login">Login</a>
                 </li>
 
-                <li class="nav-item" *ngIf="!isLogged">
+                <li class="nav-item" *ngIf="!user">
                     <a class="nav-link" routerLink="/register">Register</a>
                 </li>
 
-                <li class="nav-item " *ngIf="isLogged">
+                <li class="nav-item mt-4" *ngIf="user">
                     <a class="nav-link" (click)="onLogout()">Logout</a>
                 </li>
-                &nbsp;&nbsp;
-                <li class="nav-item">
-                    <a class="nav-link">{{ user?.email }}</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <li class="nav-item ml-8">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="nav-link mb-4">{{user?.email}}</a>
                 </li>
 
             </ul>
+            <ng-template #login>
+
+                <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" routerLink="/shopping-cart">Shopping Cart</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Collection</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" routerLink="/shopping-cart">Shopping Cart</a>
+                            <a class="dropdown-item" routerLink="/register">Register</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link" routerLink="/login">Login</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/register">Register</a>
+                    </li>
+                </ul>
+
+            </ng-template>
+
+        </div>
+    </div>
+</nav>
