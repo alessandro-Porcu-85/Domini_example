@@ -1,0 +1,24 @@
+button {
+    color: white;
+    background-color: red;
+    padding: .1rem 0rem;
+}
+
+button:hover {
+    color: white;
+    box-shadow: 3px 3px 6px 1px #292929;
+}
+
+.container-msg {
+    margin-top: 9rem;
+}
+
+.card {
+    box-shadow: 3px 3px 6px 1px #292929;
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
+strong {
+    color: rgb(37, 37, 208);
+    text-decoration: underline;
+}
