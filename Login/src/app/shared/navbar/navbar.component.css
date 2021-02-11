@@ -6,8 +6,18 @@
 }
 
 .nav-link {
+    margin-bottom: 0.9rem;
+    font-weight: bold;
     font-size: 13px;
     cursor: pointer;
+}
+
+.nav-item a {
+    color: rgb(255, 255, 255);
+}
+
+.nav-item a:hover {
+    color: rgb(255, 255, 255);
 }
 
 .navbar-nav .ul {
@@ -40,10 +50,15 @@
 }
 
 .dropdown-item:hover {
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(62, 60, 60);
+    /* rgb(212, 212, 212);*/
     cursor: pointer;
 }
 
 .dropdown-toggle {
     cursor: pointer;
+}
+
+.dropdown-menu {
+    background-color: red;
 }

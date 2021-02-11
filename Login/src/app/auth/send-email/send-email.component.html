@@ -1,0 +1,22 @@
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="card" *ngIf="user$ | async as user">
+    <div class="card-body ">
+        <h2 class="card-title text-center mb-4 ">Thank you for your Registration!</h2>
+        <div class="form-group ">
+            <p class="text-center mb-2">
+                We have sent a confirmation email to <strong>{{user?.email}}</strong>
+            </p>
+            <p class="text-center pb-4">
+                Please check yor email-box and click on the link to verify your email address.
+            </p>
+        </div>
+        <div class="form-group text-center ">
+            <button class="btn btn-lg pl-5 pr-5 mt-3 " (click)="onSendEmail() ">Resend verification email</button>
+        </div>
+    </div>
+</div>
