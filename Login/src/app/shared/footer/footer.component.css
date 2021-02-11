@@ -1,0 +1,10 @@
+.container-footer {
+    background-color: red;
+    color: white;
+    margin-top: 450px;
+    height: 200px;
+}
+
+.col {
+    padding-top: 2rem;
+}

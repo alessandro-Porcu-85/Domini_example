@@ -8,6 +8,9 @@
             <ul class="navbar-nav mx-auto mb-2 mb-md-0" *ngIf="user$ |async as user; else login">
 
                 <li class="nav-item mr-8 mt-4">
+                    <a class="nav-link" routerLink="/shopping-cart">Office</a>
+                </li>
+                <li class="nav-item mr-8 mt-4">
                     <a class="nav-link" routerLink="/shopping-cart">School</a>
                 </li>
 
@@ -50,6 +53,9 @@
             <ng-template #login>
 
                 <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+                    <li class="nav-item mr-4">
+                        <a class="nav-link mt-2" routerLink="/shopping-cart">Office</a>
+                    </li>
                     <li class="nav-item mr-4">
                         <a class="nav-link mt-2" routerLink="/shopping-cart">School</a>
                     </li>

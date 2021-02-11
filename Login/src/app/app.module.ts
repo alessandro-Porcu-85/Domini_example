@@ -13,6 +13,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from 'src/environments/environment';
 import { SendEmailComponent } from './auth/send-email/send-email.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 
 
@@ -20,7 +21,8 @@ import { SendEmailComponent } from './auth/send-email/send-email.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    SendEmailComponent
+    SendEmailComponent,
+    FooterComponent
   ],
   imports: [
 

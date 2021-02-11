@@ -17,7 +17,11 @@
 }
 
 .nav-item a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(85, 74, 109);
+}
+
+.nav-item.dropdown-item a:hover {
+    color: yellow;
 }
 
 .navbar-nav .ul {
@@ -50,7 +54,7 @@
 }
 
 .dropdown-item:hover {
-    background-color: rgb(62, 60, 60);
+    background-color: rgb(230, 225, 225);
     /* rgb(212, 212, 212);*/
     cursor: pointer;
 }
@@ -60,5 +64,6 @@
 }
 
 .dropdown-menu {
+    margin-top: 4px;
     background-color: red;
 }
