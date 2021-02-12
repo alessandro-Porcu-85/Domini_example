@@ -1,7 +1,10 @@
 h1 {
     color: white;
     box-shadow: 3px 3px 6px 1px #292929;
+    margin-top: 140px;
     font-size: 50px;
+    margin-right: 40px;
+    margin-left: 40px;
     border-radius: 15px;
 }
 
@@ -10,10 +13,45 @@ h1 {
     width: 862px;
     margin-left: -90px;
     margin-top: 290px;
+    margin-bottom: -198px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 .p {
     text-align: right;
+}
+
+h3 {
+    color: white;
+}
+
+.btn-outline-success {
+    font-size: 20px;
+    width: 20%;
+    color: white;
+    border-color: white;
+    border: solid 2px;
+    border-radius: 32px;
+    background-color: transparent;
+}
+
+.btn-outline-success:hover {
+    color: white;
+    background: red;
+}
+
+.hero-image {
+    background-image: src('/src/assets/Background/arch.jpg');
+    background-color: #ff8a8a;
+    padding-top: 40px;
+    margin-top: -137px;
+    height: 600px;
+    margin-left: -82px;
+    margin-right: -82px;
+    margin-bottom: -290px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
