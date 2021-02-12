@@ -1,0 +1,22 @@
+.container-footer {
+    background-color: red;
+    color: white;
+    margin-top: 200px;
+    padding-bottom: 290px;
+    margin-bottom: -190px;
+    height: 231px;
+}
+
+.col {
+    padding-top: 2rem;
+}
+
+.footer-header {
+    font-size: 25px;
+}
+
+p {
+    font-size: 13px;
+    text-align: left;
+    padding-left: 20px;
+}

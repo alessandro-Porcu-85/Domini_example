@@ -10,7 +10,25 @@
 
 body {
     font-family: Roboto;
-    background-image: no-repeat;
-    background-image: url('src/assets/Background/arch.jpg');
-    background-size: cover;
+    background-color: rgb(211, 191, 198);
+    background-repeat: none;
+}
+
+
+/*body {
+  font-family: Roboto;
+  background-image: url('src/assets/Background/arch.jpg');
+  background-repeat: none;
+  background-position: center;
+}
+*/
+
+a:active,
+a:focus {
+    outline: 0;
+    border: none;
+}
+
+.img {
+    padding-bottom: 30px;
 }
