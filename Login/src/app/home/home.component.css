@@ -1,5 +1,6 @@
 h1 {
-    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(57, 55, 55);
     box-shadow: 3px 3px 6px 1px #292929;
     margin-top: 140px;
     font-size: 50px;
@@ -23,6 +24,7 @@ h1 {
 }
 
 h3 {
+    font-size: 50px;
     color: white;
 }
 
@@ -42,7 +44,7 @@ h3 {
 }
 
 .hero-image {
-    background-image: src('/src/assets/Background/arch.jpg');
+    background-image: url('src/assets/Background/arch.jpg');
     background-color: #ff8a8a;
     padding-top: 40px;
     margin-top: -137px;
@@ -54,4 +56,8 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+.hero-text {
+    margin-top: 90px;
 }
