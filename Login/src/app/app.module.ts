@@ -17,12 +17,14 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SendEmailComponent,
-    FooterComponent
+    FooterComponent,
+
   ],
   imports: [
 

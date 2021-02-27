@@ -1,11 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('../src/app/css/fonts.css');
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-* body {
+body,
+html {
     font-family: Roboto;
-    background-color: rgb(211, 191, 198);
+    background-color: rgb(230, 42, 108);
     background-repeat: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 :root {
@@ -48,4 +56,14 @@ a:focus {
 
 .img {
     padding-bottom: 30px;
+    width: 100%;
+}
+
+.jumbotron {
+    background-image: url('src/assets/Background/arch.jpg');
+    color: white;
+    margin-top: 30px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
