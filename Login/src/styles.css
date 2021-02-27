@@ -6,7 +6,7 @@
 body,
 html {
     font-family: Roboto;
-    background-color: rgb(230, 42, 108);
+    background-color: rgb(255, 255, 255);
     background-repeat: none;
     background-position: center;
     background-repeat: no-repeat;
@@ -57,13 +57,4 @@ a:focus {
 .img {
     padding-bottom: 30px;
     width: 100%;
-}
-
-.jumbotron {
-    background-image: url('src/assets/Background/arch.jpg');
-    color: white;
-    margin-top: 30px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
 }
