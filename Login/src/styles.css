@@ -1,17 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('../src/app/css/fonts.css');
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+body,
+html {
+    font-family: Roboto;
+    background-color: rgb(255, 255, 255);
+    background-repeat: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
-body {
-    font-family: Roboto;
-    background-color: rgb(211, 191, 198);
-    background-repeat: none;
+:root {
+    /*Theme colours*/
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-black: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+    /*------------Gradient-colors--------------*/
+    --moon: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --amore: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    --cielo: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    --cold: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    --phenix: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    /*--------------------------------------------------------------*/
+    /* Theme variables font-family */
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton';
+    --JosefinSans: 'JosefinSans';
+    --LexendDeca: 'LexendDeca';
+    --Livvic: 'Livvic';
 }
 
 
@@ -31,4 +56,5 @@ a:focus {
 
 .img {
     padding-bottom: 30px;
+    width: 100%;
 }
