@@ -74,3 +74,22 @@ hr {
     padding-top: 30px;
     margin-bottom: -198px;
 }
+
+.move-up {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+.move-up span {
+    color: rgb(89, 87, 87);
+}
+
+.move-up span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.fas span {
+    color: red;
+}

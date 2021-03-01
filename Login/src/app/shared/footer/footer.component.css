@@ -20,3 +20,16 @@ p {
     text-align: left;
     padding-left: 20px;
 }
+
+.social-footer {
+    padding-top: 30px;
+}
+
+.social-footer a {
+    color: white;
+    font-size: 20px;
+}
+
+a {
+    cursor: pointer;
+}

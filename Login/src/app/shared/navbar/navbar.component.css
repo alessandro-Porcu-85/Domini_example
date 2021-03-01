@@ -35,7 +35,10 @@
 
 .navbar-brand {
     cursor: pointer;
-    font-size: 13px;
+    font-size: 19px;
+    letter-spacing: .3rem;
+    font-family: Oswald;
+    padding-bottom: .4rem;
 }
 
 .d-flex {

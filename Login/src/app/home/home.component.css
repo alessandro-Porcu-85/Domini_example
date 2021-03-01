@@ -39,3 +39,94 @@ button.btn:hover {
     padding-bottom: 0;
     margin-bottom: -198px;
 }
+
+.container-title {
+    font-size: 35px;
+    font-family: Oswald;
+    letter-spacing: .1rem;
+}
+
+
+/*---------------Blog Carousel------------------*/
+
+.owl-container {
+    background-color: none;
+    width: 100%;
+    height: 85vh;
+    padding-top: 3px;
+}
+
+main .blog .blog-post {
+    padding-top: 6rem;
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+    height: 70vh;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    background: transparent;
+}
+
+.blog-title {
+    padding-top: .2rem;
+    margin-bottom: 20px;
+}
+
+.blog-title h3 {
+    font-size: 30px;
+    padding-bottom: .3rem;
+    color: white;
+    ;
+}
+
+.btn-blog {
+    padding: .4rem 2rem;
+    background: var(--cielo);
+    margin: .5rem;
+    font-size: 11px;
+    cursor: pointer;
+    color: white;
+    width: 40%;
+    border-radius: 20px;
+    margin-top: 0.3rem;
+}
+
+.btn-blog:hover {
+    background: var(--phenix);
+}
+
+span {
+    display: block;
+    padding: 1.2rem 0;
+    font-size: 15px;
+    letter-spacing: .2rem;
+    color: white;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next {
+    color: white;
+    background-color: transparent;
+    font-size: 2rem;
+    border: none;
+}
+
+.owl-nav .owl-prev .owl-nav-prev:hover,
+.owl-nav .owl-next .owl-nav-next:hover {
+    color: var(--text-gray);
+    background-color: transparent;
+    font-size: 2rem;
+    border: none;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: transparent;
+    color: var(--text-gray)
+}
+
+
+/*------x--------Blog Carousel---------x--------*/
