@@ -2,9 +2,8 @@
     background-color: red;
     color: white;
     margin-top: 200px;
-    padding-bottom: 290px;
-    margin-bottom: -190px;
-    height: 20vh;
+    padding-bottom: 313px;
+    height: 25vh;
 }
 
 .col {
@@ -22,7 +21,7 @@ p {
 }
 
 .social-footer {
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .social-footer a {
@@ -30,6 +29,19 @@ p {
     font-size: 20px;
 }
 
-a {
-    cursor: pointer;
+.social-footer a:hover {
+    color: rgb(49, 49, 60);
+}
+
+.rights {
+    justify-content: center;
+    font-family: var(--JosefinSans);
+    color: white;
+}
+
+.copy {
+    font-size: 8px;
+    padding-bottom: 30px;
+    margin-bottom: -.4rem;
+    margin-top: .3rem;
 }

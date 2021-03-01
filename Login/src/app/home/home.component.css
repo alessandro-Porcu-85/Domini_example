@@ -27,6 +27,7 @@ button.btn {
 
 button.btn:hover {
     background: red;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .container-2-fluid {
@@ -41,9 +42,10 @@ button.btn:hover {
 }
 
 .container-title {
-    font-size: 35px;
+    font-size: 45px;
     font-family: Oswald;
     letter-spacing: .1rem;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -128,5 +130,35 @@ span {
     color: var(--text-gray)
 }
 
+.title-2 {
+    font-size: 30px;
+}
+
+.title-3 {
+    font-size: 20px;
+}
+
 
 /*------x--------Blog Carousel---------x--------*/
+
+
+/*-------Move-up-------*/
+
+.move-up {
+    position: absolute;
+    right: 6%;
+    top: 150%;
+}
+
+.move-up span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.move-up span:hover {
+    color: rgb(49, 49, 60);
+    ;
+    cursor: pointer;
+}
+
+
+/*---x----Move-up----x---*/
